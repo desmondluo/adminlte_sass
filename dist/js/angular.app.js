@@ -431,6 +431,7 @@ adminlte.run(['$rootScope',  function ($rootScope) {
                     //Get the clicked link and the next element
                     var $this = $(this);
                     var checkElement = $this.next();
+                    var thisli = $this.parent('li');
 
                     //Check if the next element is a menu and is visible
                     if ((checkElement.is('.treeview-menu')) && (checkElement.is(':visible'))) {
@@ -462,6 +463,19 @@ adminlte.run(['$rootScope',  function ($rootScope) {
                             //Fix the layout in case the sidebar stretches over the height of the window
                             _this.layout.fix();
                         });
+                    }
+                    else if ((thisli.is('.treeview')) && thisli.is(':visible')) {
+                        //Get the parent menu
+                        var parent = $this.parents('ul').first();
+                        //Close all open menus within the parent
+                        var ul = parent.find('ul:visible').slideUp(animationSpeed);
+                        //Remove the menu-open class from the parent
+                        ul.removeClass('menu-open');
+                        //Get the parent li
+                        var parent_li = $this.parent("li");
+                        parent.find('li.active').removeClass('active');
+                        parent_li.addClass('active');
+                        _this.layout.fix();
                     }
                     //if this isn't a link, prevent the page from being redirected
                     if (checkElement.is('.treeview-menu')) {
