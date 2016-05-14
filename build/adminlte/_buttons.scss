@@ -157,3 +157,39 @@
     font-weight: 400;
   }
 }
+
+.btn-circle {
+  width: $btn-size-normal;
+  height: $btn-size-normal;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 2.00;
+  border-radius: 30px;
+}
+
+.btn-circle-micro {
+  width: $btn-size-micro;
+  height: $btn-size-micro;
+  text-align: center;
+  padding: 1px 0;
+  line-height: 0.1;
+  border-radius: 30px;
+}
+
+.btn-circle-sm {
+  width: $btn-size-sm;
+  height: $btn-size-sm;
+  text-align: center;
+  padding: 2px 0;
+  line-height: 1.65;
+  border-radius: 30px;
+}
+
+.btn-circle-lg {
+  width: $btn-size-lg;
+  height: $btn-size-lg;
+  text-align: center;
+  padding: 13px 0;
+  line-height: 2.00;
+  border-radius: 70px;
+}
