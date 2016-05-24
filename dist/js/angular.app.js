@@ -14,25 +14,23 @@ adminlte.config(['$routeProvider', function($routeProvider){
 }]);
 
 adminlte.controller('mainController', ['$scope', function($scope) {
-
 }]);
 
 adminlte.controller('headerController', ['$scope', function($scope) {
-
 }]);
 
 adminlte.controller('footerController', ['$scope', function($scope) {
-
 }]);
 
 adminlte.controller('sidebarController', ['$scope', function($scope) {
-
 }]);
 
 adminlte.run(['$rootScope',  function ($rootScope) {
     // 这一块是adminlte里面的一些初始化, angular不应该直接操作dom, 特别是这种跨模块的dom操作, 所以还是继续交给jquery操作
+    $rootScope.init = false;
     $rootScope.$on("$viewContentLoaded", function() {
-
+        if ($rootScope.init === true)
+            return;
         /*! AdminLTE app.js
          * ================
          * Main JS application file for AdminLTE v2. This file
@@ -796,6 +794,7 @@ adminlte.run(['$rootScope',  function ($rootScope) {
                     }
                 });
             };
+            $rootScope.init = true;
         }(jQuery));
     });
 
