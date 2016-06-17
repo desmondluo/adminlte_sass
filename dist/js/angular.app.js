@@ -799,6 +799,8 @@ adminlte.run(['$rootScope',  function ($rootScope) {
     });
 
     $rootScope.$on('layoutfix', function(msg) {
-        $.AdminLTE.layout.fix();
+        if ($.AdminLTE != undefined) {
+            $.AdminLTE.layout.fix();
+        }
     });
 }]);
