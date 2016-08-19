@@ -2,3 +2,19 @@
   height: 5px;
   min-height: 5px;
 }
+
+
+@for $i from 1 through 20 {
+  .margin-left-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .margin-top-#{$i} {
+    margin-top : #{$i}px;
+  }
+  .margin-right-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}

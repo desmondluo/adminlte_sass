@@ -1,0 +1,14 @@
+{
+    "name": "adminlte_sass",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "1.5.8",
+        "angular-route": "1.5.8",
+        "font-awesome": "",
+        "bootstrap": "",
+        "jquery":""
+    },
+    "author": "Desmond",
+    "email": "desmondjie@gmail.com",
+    "blog": "http://encrt.com"
+}

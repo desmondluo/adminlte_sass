@@ -13,22 +13,16 @@
 //The core bootstrap code have not been modified. These files
 //are included only for reference.
 // Import Bootstrap Compass integration
-@import "bootstrap-compass";
 
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
 
-// Import Bootstrap for Sass
-@import "bootstrap";
-
-// compass
-@import "compass/layout";
-
 //MISC
 //----
 @import "variables.scss";
-@import "core.scss";
 @import "mixins.scss";
+@import "core.scss";
+
 
 //COMPONENTS
 //-----------

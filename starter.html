@@ -3,25 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Starter</title>
+    <title>AdminLTE_SCSS</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/angular/angular-csp.css">
     <link rel="stylesheet" href="dist/css/adminlte/AdminLTE.css">
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
-      <ng-include  src="'view/layouts/header.html'"></ng-include>
-      <ng-include src="'view/layouts/sidebar.html'"></ng-include>
+      <ng-include  src="'view/layouts/header.html'" ng-show="showHeader"></ng-include>
+      <ng-include src="'view/layouts/sidebar.html'" ng-show="showSide"></ng-include>
       <div ng-view></div>
-      <ng-include src="'view/layouts/footer.html'"></ng-include>
+      <ng-include src="'view/layouts/footer.html'" ng-show="showFooter"></ng-include>
     </div>
-    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="//cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
-    <script src="//cdn.bootcss.com/angular.js/1.5.0/angular-route.min.js"></script>
-    <script src="dist/js/angular.app.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-route/angular-route.min.js"></script>
+    <script src="./js/adminlte.js"></script>
+    <script src="./js/route.js"></script>
+    <script src="./js/layouts/headerController.js"></script>
+    <script src="./js/layouts/footerController.js"></script>
+    <script src="./js/layouts/sidebarController.js"></script>
+    <script src="./js/login/loginController.js"></script>
+    <script src="./js/mainController.js"></script>
   </body>
 </html>
