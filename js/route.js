@@ -15,6 +15,10 @@ adminlte.config(['$routeProvider', function($routeProvider){
         controller: "loginController",
         templateUrl: "view/login/login.html"
     });
+    $routeProvider.when('/index1', {
+        controller: 'index1Controller',
+        templateUrl: 'view/dashboard/index1.html'
+    });
     $routeProvider.otherwise({
         redirectTo : "/main"
     });

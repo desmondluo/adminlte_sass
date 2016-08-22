@@ -8,15 +8,19 @@
 
 var adminlte = angular.module('adminlte', ['ngRoute']);
 
-adminlte.run(['$rootScope',  function ($rootScope) {
+adminlte.run(['$rootScope', '$location', function ($rootScope, $location) {
     // 这一块是adminlte里面的一些初始化, angular不应该直接操作dom, 特别是这种跨模块的dom操作, 所以还是继续交给jquery操作
     $rootScope.init = false;
     $rootScope.showHeader    = false;
     $rootScope.showSide      = false;
     $rootScope.showFooter    = false;
     $rootScope.$on("$viewContentLoaded", function() {
-        if ($rootScope.init === true)
-            return;
+        if ($rootScope.init === true) {
+            if ($.AdminLTE != undefined) {
+                $.AdminLTE.layout.fix();
+                return;
+            }
+        }
         /*! AdminLTE app.js
          * ================
          * Main JS application file for AdminLTE v2. This file
@@ -789,4 +793,10 @@ adminlte.run(['$rootScope',  function ($rootScope) {
             $.AdminLTE.layout.fix();
         }
     });
+
+    $rootScope.setLayouts = function (show) {
+        $rootScope.showHeader = show;
+        $rootScope.showSide   = show;
+        $rootScope.showFooter = show;
+    };
 }]);

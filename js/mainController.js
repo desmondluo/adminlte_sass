@@ -6,5 +6,6 @@
 
 "use strict";
 
-adminlte.controller('mainController', ['$scope', function($scope) {
+adminlte.controller('mainController', ['$scope', '$rootScope', function($scope, $rootScope) {
+    $rootScope.setLayouts(true);
 }]);
