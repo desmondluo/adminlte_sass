@@ -6,7 +6,8 @@
         "angular-route": "1.5.8",
         "font-awesome": "",
         "bootstrap": "",
-        "jquery":""
+        "jquery":"",
+        "ionicons":"2.0.1"
     },
     "author": "Desmond",
     "email": "desmondjie@gmail.com",

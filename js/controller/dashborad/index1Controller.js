@@ -8,4 +8,5 @@
 
 adminlte.controller('index1Controller', ['$scope', '$rootScope', function($scope, $rootScope) {
     $rootScope.setLayouts(true);
+
 }]);
