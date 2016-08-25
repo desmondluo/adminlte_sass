@@ -1,15 +1,17 @@
 {
-    "name": "adminlte_sass",
-    "version": "0.0.1",
-    "dependencies": {
-        "angular": "1.5.8",
-        "angular-route": "1.5.8",
-        "font-awesome": "",
-        "bootstrap": "",
-        "jquery":"",
-        "ionicons":"2.0.1"
-    },
-    "author": "Desmond",
-    "email": "desmondjie@gmail.com",
-    "blog": "http://encrt.com"
+  "name": "adminlte_sass",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-morris-chart": "^1.3.0",
+    "angular-route": "1.5.8",
+    "bootstrap": "",
+    "font-awesome": "",
+    "ionicons": "2.0.1",
+    "jquery": "",
+    "echarts": "3.0"
+  },
+  "author": "Desmond",
+  "email": "desmondjie@gmail.com",
+  "blog": "http://encrt.com"
 }
