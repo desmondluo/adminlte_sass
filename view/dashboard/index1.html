@@ -73,14 +73,14 @@
                 <div class="nav-tabs-custom">
                     <!-- Tabs within a box -->
                     <ul class="nav nav-tabs pull-right">
-                        <li class="active"><a data-toggle="tab">Area</a></li>
-                        <li><a data-toggle="tab">Donut</a></li>
+                        <li class="" ng-click="showSales('area')"><a data-toggle="tab">Area</a></li>
+                        <li class="active" ng-click="showSales('donut')"><a data-toggle="tab">Donut</a></li>
                         <li class="pull-left header"><i class="fa fa-inbox"></i> Sales</li>
                     </ul>
-                    <div class="tab-content no-padding">
+                    <div class="no-padding">
                         <!-- Morris chart - Sales -->
-                        <div class="chart tab-pane active" id="revenue-echart" style="position: relative; height: 300px;"></div>
-                        <div class="chart tab-pane" id="sales-echart" style="position: relative; height: 300px;"></div>
+                        <div class="chart tab-pane" id="revenue-echart" style="position: relative; height: 300px;display: block" ng-show="sales.donut"></div>
+                        <div class="chart tab-pane" id="sales-echart" style="position: relative; height: 300px;display: block" ng-show="sales.area"></div>
                     </div>
                 </div><!-- /.nav-tabs-custom -->
             </section><!-- /.Left col -->
