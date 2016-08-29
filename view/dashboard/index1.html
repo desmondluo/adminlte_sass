@@ -83,6 +83,46 @@
                         <div class="chart tab-pane" id="sales-echart" style="position: relative; height: 300px;display: block" ng-show="sales.area"></div>
                     </div>
                 </div><!-- /.nav-tabs-custom -->
+                <div class="box box-success">
+                    <div class="box-header">
+                        <i class="fa fa-comments-o"></i>
+
+                        <h3 class="box-title">Chat</h3>
+
+                        <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                            <div class="btn-group" data-toggle="btn-toggle">
+                                <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body chat" id="chat-box">
+                        <!-- chat item -->
+                        <div class="item" ng-repeat="chat in chats">
+                            <img src="{{chat.image}}" alt="user image" class="{{chat.status}}">
+
+                            <p class="message">
+                                <a href="#" class="name">
+                                    <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> {{chat.time}}</small>
+                                    {{chat.name}}
+                                </a>
+                                {{chat.content}}
+                            </p>
+                            <!-- /.attachment -->
+                        </div>
+                    </div>
+                    <!-- /.chat -->
+                    <div class="box-footer">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Type message..." ng-model="myword">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-success" ng-click="addChat()"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section><!-- /.Left col -->
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
 

@@ -19,6 +19,10 @@ adminlte.config(['$routeProvider', function($routeProvider){
         controller: 'index1Controller',
         templateUrl: 'view/dashboard/index1.html'
     });
+    $routeProvider.when('/echarts', {
+        controller: 'echartsController',
+        templateUrl: 'view/table/echarts.html'
+    });
     $routeProvider.otherwise({
         redirectTo : "/main"
     });

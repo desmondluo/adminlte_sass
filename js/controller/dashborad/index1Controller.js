@@ -17,6 +17,9 @@ adminlte.controller('index1Controller', ['$scope', '$rootScope', function($scope
         $scope.sales.donut  = false;
         $scope.sales.area   = false;
         $scope.sales[type]  = true;
+        // must after angular render, echarts could resize
+        setTimeout(function(){$scope.resize()}, 0);
+        //$scope.resize();
     };
 
 
@@ -173,8 +176,48 @@ adminlte.controller('index1Controller', ['$scope', '$rootScope', function($scope
     };
     $scope.revenueInit();
     $scope.areaInit();
-    window.onresize = function () {
+
+    $scope.resize = function() {
         $scope.revenueEchart.resize();
         $scope.areaEchart.resize();
+    };
+    window.onresize = function () {
+        $scope.resize();
     }
+
+    // chat
+    $scope.myword = "";
+    $scope.chats = [];
+    $scope.chats.push({
+        status: "online",
+        time: "2:15",
+        name: "Mike Doe",
+        content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+        image: "dist/img/user4-128x128.jpg"
+    });
+    $scope.chats.push({
+        status: "offline",
+        time: "5:15",
+        name: "Alexander Pierce",
+        content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+        image: "dist/img/user3-128x128.jpg"
+    });
+    $scope.chats.push({
+        status: "offline",
+        time: "5:50",
+        name: "Susan Doe",
+        content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+        image: "dist/img/user2-160x160.jpg"
+    });
+
+    $scope.addChat = function() {
+        $scope.chats.push({
+            status: "offline",
+            time: "5:50",
+            name: "Susan Doe",
+            content: $scope.myword,
+            image: "dist/img/user2-160x160.jpg"
+        });
+        $scope.myword = "";
+    };
 }]);
