@@ -5,6 +5,7 @@
     "angular": "1.5.8",
     "angular-morris-chart": "^1.3.0",
     "angular-route": "1.5.8",
+    "angular-smart-table": "^2.1.8",
     "bootstrap": "",
     "font-awesome": "",
     "ionicons": "2.0.1",

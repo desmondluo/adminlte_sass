@@ -21,7 +21,11 @@ adminlte.config(['$routeProvider', function($routeProvider){
     });
     $routeProvider.when('/echarts', {
         controller: 'echartsController',
-        templateUrl: 'view/table/echarts.html'
+        templateUrl: 'view/chart/echarts.html'
+    });
+    $routeProvider.when('/smarttable', {
+        controller: 'smarttableController',
+        templateUrl: 'view/table/smarttable.html'
     });
     $routeProvider.otherwise({
         redirectTo : "/main"
