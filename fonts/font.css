@@ -1,0 +1,126 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Source Sans Pro Light'),
+		local('SourceSansPro-Light'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGBlTL9oEQvYTI0YAW1-Ysv0.eot */
+		url('Source_Sans_Pro_300.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff */
+		url('Source_Sans_Pro_300.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2 */
+		url('Source_Sans_Pro_300.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=toadOcfmlt9b38dHJxOBGOUS_KcVBMXUJf1HZjyEEXg&skey=e2b26fc7e9e1ade8&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_300.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMw1o1eFRj7wYC6JbISqOjY.ttf */
+		url('Source_Sans_Pro_300.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Source Sans Pro'),
+		local('SourceSansPro-Regular'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlN0tugusXa58UbOrParLRF0.eot */
+		url('Source_Sans_Pro_400.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff */
+		url('Source_Sans_Pro_400.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2 */
+		url('Source_Sans_Pro_400.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=ODelI1aHBYDBqgeIAH2zlADX0QHsyBtvFGhCuXSMYhM&skey=1e026b1c27170b9b&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_400.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNzbP97U9sKh0jjxbPbfOKg.ttf */
+		url('Source_Sans_Pro_400.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local('Source Sans Pro Semibold'),
+		local('SourceSansPro-Semibold'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGNanmHNzStikJN_FjplbBik.eot */
+		url('Source_Sans_Pro_600.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff */
+		url('Source_Sans_Pro_600.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2 */
+		url('Source_Sans_Pro_600.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=toadOcfmlt9b38dHJxOBGN6ADpNrYTvKq5lsv8A_aYs&skey=227a890402fab339&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_600.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGNNE-IuDiR70wI4zXaKqWCM.ttf */
+		url('Source_Sans_Pro_600.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local('Source Sans Pro Bold'),
+		local('SourceSansPro-Bold'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFV89XnfCtb1fhQGOlhyqi8.eot */
+		url('Source_Sans_Pro_700.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff */
+		url('Source_Sans_Pro_700.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2 */
+		url('Source_Sans_Pro_700.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=toadOcfmlt9b38dHJxOBGDoOxVUo1xdF11_PvoexWN4&skey=84e1cdfb74260b1d&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_700.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGLsbIrGiHa6JIepkyt5c0A0.ttf */
+		url('Source_Sans_Pro_700.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 300;
+	src:
+		local('Source Sans Pro Light Italic'),
+		local('SourceSansPro-LightIt'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Ffv2gilBNcWxh_XnzykpgY.eot */
+		url('Source_Sans_Pro_300italic.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GGomRtBD2u8FwSY4jjlmeA.woff */
+		url('Source_Sans_Pro_300italic.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6MAjkyiewWYrWZc50I8hK7I.woff2 */
+		url('Source_Sans_Pro_300italic.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=fpTVHK8qsXbIeTHTrnQH6A2mJkpsOKRM4ng017j2hP8&skey=8215b74d5c696e49&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_300italic.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Iue0YgdIF4L_q7PS4yTQOQ.ttf */
+		url('Source_Sans_Pro_300italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local('Source Sans Pro Italic'),
+		local('SourceSansPro-It'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM04EkD-uilk0_oIxFXvMtLk.eot */
+		url('Source_Sans_Pro_400italic.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMzNrcjQuD0pTu1za2FULaMs.woff */
+		url('Source_Sans_Pro_400italic.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMxgy2Fsj5sj3EzlXpqVXRKo.woff2 */
+		url('Source_Sans_Pro_400italic.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=M2Jd71oPJhLKp0zdtTvoM39_ATuyk1uF0ceUyTEF8x4&skey=28c775fa366622c1&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_400italic.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM0DauxaEVho0aInXGvhmB4k.ttf */
+		url('Source_Sans_Pro_400italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 600;
+	src:
+		local('Source Sans Pro Semibold Italic'),
+		local('SourceSansPro-SemiboldIt'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6EbumxWHRSe1oVyAWeloI5o.eot */
+		url('Source_Sans_Pro_600italic.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PULlOK_XQENnt2ryrY843E.woff */
+		url('Source_Sans_Pro_600italic.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GQKuzMuncr0JB710wa2dPI.woff2 */
+		url('Source_Sans_Pro_600italic.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=fpTVHK8qsXbIeTHTrnQH6Fd_7WJx2GUG2oLFWNtCPo4&skey=1ddbb15c8706f8a1&v=v9#SourceSansPro */
+		url('Source_Sans_Pro_600italic.svg#SourceSansPro') format('svg'),
+		/* from https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6EfrksRSinjQUrHtm_nW72g.ttf */
+		url('Source_Sans_Pro_600italic.ttf') format('truetype');
+}

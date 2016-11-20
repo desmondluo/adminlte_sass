@@ -2,3 +2,7 @@
 /.idea
 node_modules
 dist
+.cproject
+.project
+.settings
+npm-debug.log
